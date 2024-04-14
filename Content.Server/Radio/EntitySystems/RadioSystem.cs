@@ -6,7 +6,7 @@ using Content.Server.VoiceMask;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Radio;
-using Content.Server.Imperial.Radio
+using Content.Server.Imperial.Radio.Components;
 using Content.Shared.Radio.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
@@ -116,7 +116,7 @@ public sealed class RadioSystem : EntitySystem
                 TryComp(receiver, out FrequencyComponent? rc);
                 if (rs!.frequency != rc!.frequency) continue;
             }
-            
+
             if (!radio.Channels.Contains(channel.ID) || (TryComp<IntercomComponent>(receiver, out var intercom) && !intercom.SupportedChannels.Contains(channel.ID)))
                 continue;
 

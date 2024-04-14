@@ -5,8 +5,8 @@
   description: a mobile corpse.
   components:
   - type: Sprite
-    sprite: Objects/Misc/heatdeath.rsi
+    sprite: Imperial/heatdeath.rsi
     state: heatdeath
   - type: Item
-    sprite: Objects/Misc/heatdeath.rsi
+    sprite: Imperial/heatdeath.rsi
     state: heatdeath
