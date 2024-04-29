@@ -233,6 +233,7 @@
   abstract: true
   components:
   - type: Flashable
+  
   - type: Destructible
     thresholds:
     - trigger:
@@ -241,6 +242,7 @@
         damage: 400
       behaviors:
       - !type:GibBehavior { }
+    # Урон при котором сгорит жертва.
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
